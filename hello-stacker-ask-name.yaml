@@ -1,0 +1,12 @@
+type: app
+description: meu primeiro stackfile
+template: hello-stacker/hello-stacker-template
+inputs:
+  some_input: value
+plugins:
+- plugin: hello-stacker/hello-stacker-plugin
+  inputs:
+    some_input: value
+    some_list:
+    - item1
+    - item2
